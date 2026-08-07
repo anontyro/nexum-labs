@@ -8,15 +8,23 @@ const BaseNavBar: React.FC = () => {
 
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            NexumLabs
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1, textTransform: "uppercase" }}>
+            <Typography variant="h5" component="span" color="primary">
+              {`>_ `}
+            </Typography>
+            <Typography variant="h5" component="span" >
+              {`Nexum`}
+            </Typography>
+            <Typography variant="h5" component="span" color="primary">
+              {`Labs`}
+            </Typography>
           </Typography>
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{ mr: 1 }}
           >
             <MenuIcon />
           </IconButton>
