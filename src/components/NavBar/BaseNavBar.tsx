@@ -4,11 +4,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const BaseNavBar: React.FC = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 0 }}>
 
-      <AppBar position="static">
+      <AppBar position="sticky" elevation={0}>
         <Toolbar>
-          <Typography variant="h5" component="div" sx={{ flexGrow: 1, textTransform: "uppercase" }}>
+          <Typography variant="h5" component="h1" sx={{ flexGrow: 1, textTransform: "uppercase" }}>
             <Typography variant="h5" component="span" color="primary">
               {`>_ `}
             </Typography>

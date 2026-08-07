@@ -22,20 +22,20 @@ const defaultTheme = createTheme({
     // Roboto: MUI/body default. Space Grotesk: display headlines (the "flair" font).
     // JetBrains Mono: buttons, labels, code-style accents (punk/technical touches).
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-    h1: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700 },
-    h2: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700 },
-    h3: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700 },
-    h4: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700 },
-    h5: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700 },
-    h6: { fontFamily: '"Space Grotesk", sans-serif', fontWeight: 700 },
+    h1: { fontFamily: 'var(--font-space-grotesk), sans-serif', fontWeight: 700, fontSize: '5.4rem' },
+    h2: { fontFamily: 'var(--font-space-grotesk), sans-serif', fontWeight: 700, fontSize: '3.38rem' },
+    h3: { fontFamily: 'var(--font-space-grotesk), sans-serif', fontWeight: 700, fontSize: '2.7rem' },
+    h4: { fontFamily: 'var(--font-space-grotesk), sans-serif', fontWeight: 700, fontSize: '1.92rem' },
+    h5: { fontFamily: 'var(--font-space-grotesk), sans-serif', fontWeight: 700, fontSize: '1.4rem' },
+    h6: { fontFamily: 'var(--font-space-grotesk), sans-serif', fontWeight: 900, fontSize: '1.0rem' },
     button: {
-      fontFamily: '"JetBrains Mono", monospace',
+      fontFamily: 'var(--font-jetbrains-mono), monospace',
       fontWeight: 700,
       textTransform: 'none',
       letterSpacing: 0.2,
     },
     overline: {
-      fontFamily: '"JetBrains Mono", monospace',
+      fontFamily: 'var(--font-jetbrains-mono), monospace',
       letterSpacing: 1,
     },
   },

@@ -1,7 +1,7 @@
 'use client';
 
 import { ThemeProvider, THEME_ID } from '@mui/material/styles';
-import defaultTheme from "@/app/theme/themes/defaultTheme";
+import defaultTheme from "@/themes/defaultTheme";
 import { CssBaseline } from '@mui/material';
 
 type MuiProviderProps = {
