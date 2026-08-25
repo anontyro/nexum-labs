@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Space_Grotesk,
+  JetBrains_Mono,
+} from "next/font/google";
 import "./globals.css";
-import BaseNavBar from "@/components/NavBar/BaseNavBar";
+import BaseNavBar from "@/components/Layout/NavBar/BaseNavBar";
 import Providers from "../providers";
 import EmotionRegistry from "@/lib/EmotionRegistry";
+import { Box } from "@mui/material";
+import StandardFooter from "@/components/Layout/Footer/StandardFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,16 +39,20 @@ export const metadata: Metadata = {
   description: "Lets build something faster",
 };
 
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
-
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
+    >
       <body>
         <EmotionRegistry>
           <Providers>
             <BaseNavBar />
-            {children}
+            <Box component="main" sx={{ flexGrow: 1 }}>
+              {children}
+            </Box>
+            <StandardFooter />
           </Providers>
         </EmotionRegistry>
       </body>
