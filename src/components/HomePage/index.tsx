@@ -47,7 +47,9 @@ const Homepage = () => {
         }}
       >
         <Stack direction="row" spacing={1}>
-          <Button variant="contained">Book a call</Button>
+          <Button variant="contained" href="/contact">
+            Contact Us
+          </Button>
           <Button variant="outlined" color="secondary">
             See how it works
           </Button>
