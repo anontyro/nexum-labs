@@ -11,6 +11,7 @@ import Providers from "../providers";
 import EmotionRegistry from "@/lib/EmotionRegistry";
 import { Box } from "@mui/material";
 import StandardFooter from "@/components/Layout/Footer/StandardFooter";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </Providers>
         </EmotionRegistry>
       </body>
+      <Analytics />
     </html>
   );
 }

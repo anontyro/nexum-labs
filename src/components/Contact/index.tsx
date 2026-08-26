@@ -84,6 +84,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     setErrorMessages([]);
 
     const data = Object.fromEntries(new FormData(e.currentTarget));
@@ -94,6 +95,7 @@ const ContactForm = () => {
     });
     if (response.ok) {
       openSuccess();
+      form.reset();
     } else {
       const errorMessages = parseErrors(response);
       setErrorMessages(errorMessages);
@@ -137,18 +139,22 @@ const ContactForm = () => {
                   id="contact-name"
                   name="contact-name"
                   label="Name"
+                  required
                   variant="outlined"
                 />
                 <TextField
                   id="company-name"
                   name="company-name"
                   label="Company"
+                  required
                   variant="outlined"
                 />
                 <TextField
                   id="contact-email"
                   name="contact-email"
                   label="Email"
+                  type="email"
+                  required
                   variant="outlined"
                 />
                 <TextField
@@ -157,6 +163,7 @@ const ContactForm = () => {
                   id="content"
                   name="content"
                   label="What would you like to automate or improve?"
+                  required
                   variant="outlined"
                 />
                 <Button type="submit" variant="contained">
