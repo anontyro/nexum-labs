@@ -1,7 +1,10 @@
+"use client";
+
 import { Typography } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 import { SxProps } from "@mui/material/styles";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 type SiteLinkProps = {
   sx?: SxProps<Theme>;
@@ -36,7 +39,12 @@ const TAG_LINES = [
 ];
 
 export const TagLines = () => {
-  const randomLine = TAG_LINES[Math.floor(Math.random() * TAG_LINES.length)];
+  const [tagLine, setTagLine] = useState(TAG_LINES[0]);
+
+  useEffect(() => {
+    const randomLine = TAG_LINES[Math.floor(Math.random() * TAG_LINES.length)];
+    setTagLine(randomLine);
+  });
 
   return (
     <Typography
@@ -46,7 +54,7 @@ export const TagLines = () => {
         fontFamily: "Space Grotesk",
       }}
     >
-      {randomLine}
+      {tagLine}
     </Typography>
   );
 };

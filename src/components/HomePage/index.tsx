@@ -2,25 +2,7 @@
 
 import { Box, Button, Divider, Stack, Typography } from "@mui/material";
 import HowWeWork from "./components/HowWeWork/HowWeWork";
-
-type InlineHeadingProps = {
-  text: string;
-};
-
-const InlineHeading: React.FC<InlineHeadingProps> = ({ text }) => {
-  return (
-    <Typography
-      variant="caption"
-      color="textSecondary"
-      sx={{
-        textTransform: "uppercase",
-        fontFamily: "JetBrains Mono",
-      }}
-    >
-      {text}
-    </Typography>
-  );
-};
+import InlineHeading from "../Layout/Headings/InlineHeading";
 
 const PAGE_CONTENT = {
   TITLE: "Integrations & automation, done properly.",
