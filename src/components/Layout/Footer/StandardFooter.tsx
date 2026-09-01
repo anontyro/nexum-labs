@@ -5,6 +5,7 @@ import LocationCityIcon from "@mui/icons-material/LocationCity";
 import EmailIcon from "@mui/icons-material/Email";
 
 import NextLink from "next/link";
+import SiteLink, { TagLines } from "../SiteLink/SiteLink";
 
 const StandardFooter = () => {
   return (
@@ -18,24 +19,8 @@ const StandardFooter = () => {
           }}
         >
           <Stack direction="column">
-            <Typography
-              variant="h5"
-              component="h4"
-              sx={{ flexGrow: 1, textTransform: "uppercase", opacity: "0.5" }}
-            >
-              <Typography variant="h5" component="span" color="primary">
-                {`>_ `}
-              </Typography>
-              <Typography variant="h5" component="span">
-                {`Nexum`}
-              </Typography>
-              <Typography variant="h5" component="span" color="primary">
-                {`Labs`}
-              </Typography>
-            </Typography>
-            <Typography variant="body2" color="textSecondary">
-              Building efficiency together
-            </Typography>
+            <SiteLink sx={{ opacity: 0.5 }} />
+            <TagLines />
           </Stack>
           <Stack direction="row" spacing={2}>
             <Stack direction="column" sx={{ alignItems: "center" }}>

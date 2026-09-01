@@ -50,7 +50,11 @@ const Homepage = () => {
           <Button variant="contained" href="/contact">
             Contact Us
           </Button>
-          <Button variant="outlined" color="secondary">
+          <Button
+            variant="outlined"
+            color="secondary"
+            sx={{ transform: "rotate(1.4deg)" }}
+          >
             See how it works
           </Button>
         </Stack>
@@ -98,6 +102,7 @@ const Homepage = () => {
           {/*  n8n*/}
           <Box
             sx={{
+              paddingTop: "10px",
               transform: "rotate(-1.6deg)",
             }}
           >
@@ -144,6 +149,7 @@ const Homepage = () => {
               sx={{
                 justifyContent: "space-between",
                 alignItems: "center",
+                paddingTop: "10px",
               }}
             >
               <Stack direction="column">
