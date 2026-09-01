@@ -1,5 +1,6 @@
 import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 
 const BaseNavBar: React.FC = () => {
   return (
@@ -11,15 +12,17 @@ const BaseNavBar: React.FC = () => {
             component="h1"
             sx={{ flexGrow: 1, textTransform: "uppercase" }}
           >
-            <Typography variant="h5" component="span" color="primary">
-              {`>_ `}
-            </Typography>
-            <Typography variant="h5" component="span">
-              {`Nexum`}
-            </Typography>
-            <Typography variant="h5" component="span" color="primary">
-              {`Labs`}
-            </Typography>
+            <Link href="/">
+              <Typography variant="h5" component="span" color="primary">
+                {`>_ `}
+              </Typography>
+              <Typography variant="h5" component="span">
+                {`Nexum`}
+              </Typography>
+              <Typography variant="h5" component="span" color="primary">
+                {`Labs`}
+              </Typography>
+            </Link>
           </Typography>
           <IconButton
             size="large"
