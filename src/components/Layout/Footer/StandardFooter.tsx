@@ -15,7 +15,12 @@ const StandardFooter = () => {
         <Stack
           direction="row"
           sx={{
-            justifyContent: "space-between",
+            justifyContent: {
+              xs: "center",
+              md: "space-between",
+            },
+            flexWrap: "wrap",
+            gap: "1rem",
           }}
         >
           <Stack direction="column">

@@ -49,11 +49,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <EmotionRegistry>
           <Providers>
-            <BaseNavBar />
-            <Box component="main" sx={{ flexGrow: 1 }}>
-              {children}
-            </Box>
-            <StandardFooter />
+            <BaseNavBar>
+              <Box component="main" sx={{ flexGrow: 1, minHeight: "80vh" }}>
+                {children}
+              </Box>
+              <StandardFooter />
+            </BaseNavBar>
           </Providers>
         </EmotionRegistry>
       </body>
