@@ -7,6 +7,7 @@ import {
   Divider,
   Drawer,
   IconButton,
+  Link,
   List,
   ListItem,
   ListItemButton,
@@ -17,7 +18,7 @@ import {
 import { useTheme } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import Link from "next/link";
+import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 import SiteLink from "../SiteLink/SiteLink";
 
@@ -38,7 +39,7 @@ type BaseNavBarProps = {
 const BaseNavBar: React.FC<BaseNavBarProps> = ({ children }) => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"), { noSsr: true });
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const handleToggle = () => setOpen((prev) => !prev);
   const handleClose = () => setOpen(false);
@@ -93,7 +94,8 @@ const BaseNavBar: React.FC<BaseNavBarProps> = ({ children }) => {
                 ? theme.transitions.duration.enteringScreen
                 : theme.transitions.duration.leavingScreen,
             }),
-            marginLeft: isDesktop && open ? 0 : isDesktop ? `-${DRAWER_WIDTH}px` : 0,
+            marginLeft:
+              isDesktop && open ? 0 : isDesktop ? `-${DRAWER_WIDTH}px` : 0,
           }}
         >
           {children}
@@ -109,7 +111,14 @@ const NavDrawerContent: React.FC<{ onNavigate: () => void }> = ({
   const pathname = usePathname();
 
   return (
-    <Box sx={{ width: { xs: "100%", md: DRAWER_WIDTH }, height: "100%" }}>
+    <Box
+      sx={{
+        width: { xs: "100%", md: DRAWER_WIDTH },
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <SiteLink sx={{ fontSize: "1.5rem" }} />
         <IconButton onClick={onNavigate} aria-label="close menu">
@@ -118,19 +127,43 @@ const NavDrawerContent: React.FC<{ onNavigate: () => void }> = ({
       </Toolbar>
       <Divider />
       <List>
-        {NAV_LINKS.map((link) => (
+        {NAV_LINKS.map((link, index) => (
           <ListItem key={link.href} disablePadding>
             <ListItemButton
-              component={Link}
+              component={NextLink}
               href={link.href}
               selected={pathname === link.href}
               onClick={onNavigate}
+              sx={{
+                transition: "transform 0.15s ease, color 0.15s ease",
+                "&:hover": {
+                  color: "secondary.main",
+                  transform: `${index % 2 === 0 ? "rotate(1.6deg)" : "rotate(-1.6deg)"}`,
+                },
+                "&.Mui-selected": {
+                  color: "secondary.main",
+                  transform: `${index % 2 === 0 ? "rotate(1.6deg)" : "rotate(-1.6deg)"}`,
+                },
+              }}
             >
-              <ListItemText primary={link.label} />
+              <ListItemText
+                primary={link.label}
+                sx={{
+                  "& .MuiListItemText-primary": {
+                    fontFamily: "JetBrains Mono",
+                  },
+                }}
+              />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
+      <Box sx={{ marginTop: "auto", padding: "1rem" }}>
+        <Divider sx={{ marginBottom: "1rem" }} />
+        <Link href="mailto:hello@nexumlabs.co.uk" color="secondary">
+          hello@nexumlabs.co.uk
+        </Link>
+      </Box>
     </Box>
   );
 };
