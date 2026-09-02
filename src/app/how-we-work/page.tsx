@@ -1,5 +1,11 @@
-const HowWeWork = () => {
-  return <div></div>;
+import HowWeWork from "@/components/HowWeWork";
+
+const HowWeWorkPage = () => {
+  return (
+    <div>
+      <HowWeWork />
+    </div>
+  );
 };
 
-export default HowWeWork;
+export default HowWeWorkPage;
