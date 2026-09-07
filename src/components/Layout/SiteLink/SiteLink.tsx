@@ -14,7 +14,7 @@ const SiteLink: React.FC<SiteLinkProps> = ({ sx = {} }) => {
   return (
     <Typography
       variant="h5"
-      component="h1"
+      component="p"
       sx={{ flexGrow: 1, textTransform: "uppercase", ...sx }}
     >
       <Link href="/">

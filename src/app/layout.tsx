@@ -35,9 +35,32 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "700"],
 });
 
+const SITE_URL = "https://nexumlabs.co.uk";
+const SITE_DESCRIPTION =
+  "Nexum Labs builds fixed-price automation workflows that save UK SMEs time and money, without the jargon or extra headcount. Based in Aberdeen, working with businesses across the UK.";
+
 export const metadata: Metadata = {
-  title: "NexumLabs",
-  description: "Lets build something faster",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "NexumLabs | Automation & Workflow Consulting for UK SMEs",
+    template: "%s | NexumLabs",
+  },
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "NexumLabs",
+    title: "NexumLabs | Automation & Workflow Consulting for UK SMEs",
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary",
+    title: "NexumLabs | Automation & Workflow Consulting for UK SMEs",
+    description: SITE_DESCRIPTION,
+  },
   icons: {
     icon: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -48,6 +71,21 @@ export const metadata: Metadata = {
   manifest: "/favicon/site.webmanifest",
 };
 
+const ORGANIZATION_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Nexum Labs",
+  url: SITE_URL,
+  email: "hello@nexumlabs.co.uk",
+  description: SITE_DESCRIPTION,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Aberdeen",
+    addressCountry: "GB",
+  },
+  areaServed: "GB",
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -55,6 +93,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
     >
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }}
+        />
         <EmotionRegistry>
           <Providers>
             <BaseNavBar>

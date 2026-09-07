@@ -114,7 +114,7 @@ const ContactForm = () => {
           },
         }}
       >
-        <Typography component="h2" variant="h4">
+        <Typography component="h1" variant="h4">
           Contact Us
         </Typography>
         <Stack sx={{ alignItems: "center" }}>

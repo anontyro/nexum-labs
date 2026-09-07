@@ -28,7 +28,7 @@ const Projects = () => {
     >
       <Box>
         <InlineHeading text="Projects" sx={{ fontSize: "1rem" }} />
-        <Typography component="h2" variant="h4">
+        <Typography component="h1" variant="h4">
           {PROJECT_CONTENT.TITLE}
         </Typography>
         <Typography

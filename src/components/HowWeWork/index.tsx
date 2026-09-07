@@ -43,7 +43,7 @@ const HowWeWork = () => {
     >
       <Box>
         <InlineHeading text="How We Work" sx={{ fontSize: "1rem" }} />
-        <Typography component="h2" variant="h4">
+        <Typography component="h1" variant="h4">
           {HOW_WE_WORK_CONTENT.TITLE}
         </Typography>
         <Typography

@@ -18,7 +18,7 @@ const Homepage = () => {
       }}
     >
       <Box>
-        <Typography component="h2" variant="h4">
+        <Typography component="h1" variant="h4">
           {PAGE_CONTENT.TITLE}
         </Typography>
         <Typography variant="body1">{PAGE_CONTENT.SUB_TITLE}</Typography>

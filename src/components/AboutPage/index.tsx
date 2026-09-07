@@ -105,6 +105,19 @@ const FAQ_CONTENT: { TITLE: string; DESCRIPTION: string }[] = [
   },
 ];
 
+const FAQ_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_CONTENT.map((x) => ({
+    "@type": "Question",
+    name: x.TITLE,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: x.DESCRIPTION.replace(/\s+/g, " ").trim(),
+    },
+  })),
+};
+
 const FaqAccordion: React.FC = () => {
   const id = useId();
 
@@ -145,7 +158,7 @@ const AboutPage: React.FC = () => {
     >
       <Box>
         <InlineHeading text="About" sx={{ fontSize: "1rem" }} />
-        <Typography component="h2" variant="h4">
+        <Typography component="h1" variant="h4">
           Who's behind Nexum Labs?
         </Typography>
         <Typography color="textSecondary" variant="body2">
@@ -168,6 +181,10 @@ const AboutPage: React.FC = () => {
         <InlineHeading text="FAQ" />
         <FaqAccordion />
       </Box>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }}
+      />
       {/*<Divider sx={{ marginTop: "1rem", marginBottom: "1rem" }} />
       <Box>
         <InlineHeading text="FAQ" />
