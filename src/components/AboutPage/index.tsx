@@ -55,6 +55,40 @@ const FAQ_CONTENT: { TITLE: string; DESCRIPTION: string }[] = [
     `,
   },
   {
+    TITLE: "How much does this cost?",
+    DESCRIPTION: `
+    We keep pricing simple: every engagement is a fixed price agreed upfront, never billed by the hour, so there are no surprises along the way.
+
+    The audit itself starts from £200, depending on the size and complexity of your business. If you decide to move forward with a project afterwards, we'll deduct the audit fee from the overall cost, so it's never wasted spend either way.
+
+    Once the audit is complete, we'll put together a fixed-price proposal for the build phase based on exactly what needs doing, so you'll know the full cost before committing to anything further.
+    `,
+  },
+  {
+    TITLE: "How do you handle the security of our data?",
+    DESCRIPTION: `
+    We take this seriously, especially since automation often means connecting to the tools and information that run your business day to day.
+
+    We're happy to sign an NDA before any detailed discussions take place, so you can speak openly about your processes and data without concern. We also carry professional indemnity insurance, giving you extra protection and peace of mind while we work together.
+    `,
+  },
+  {
+    TITLE: "Will we be locked into using you after the project is finished?",
+    DESCRIPTION: `
+    No. Everything we build is handed over to you along with clear documentation, so you own it outright and aren't reliant on us to keep it running.
+
+    We deliberately avoid designing anything that locks you in. If in future you'd rather bring maintenance in-house, hand it to another provider, or simply pause working with us, you're free to do so with everything you need already in hand.
+    `,
+  },
+  {
+    TITLE: "What support do we get after the project is delivered?",
+    DESCRIPTION: `
+    After handover, we check in with you after one week and again after one month to make sure everything is running smoothly and to catch any early issues.
+
+    Beyond that, we're always happy to help with questions or small tweaks. For anything more involved, or ongoing support on a regular basis, we can put a separate support arrangement in place, that way we can keep being genuinely helpful without it being an open-ended, unpaid commitment on either side.
+    `,
+  },
+  {
     TITLE:
       "Once an automation process is in place, do I need technical knowledge to use it?",
     DESCRIPTION: `
