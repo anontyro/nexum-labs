@@ -18,6 +18,20 @@ const HOW_WE_WORK_CONTENT = {
 
   In somecases we may even need to build more bespoke processes to capture or transform data, these tend to be bigger scoped and more involved but can be shaped exactly to the business needs. Although these are less common cases and find usually other processes solve the problems.
   `,
+  SERVICES: [
+    {
+      TITLE: "n8n Automation Flow",
+      DESCRIPTION: `
+      Getting tired of chasing up clients for invoice payments? Finding it hard to keep leads organised? Having to manually update data in two or more places? These are they types of workflows that we use n8n to help automate. Once they are setup and running they can provide a noticable impact in the day to day work.
+      `,
+    },
+    {
+      TITLE: "Custom Solutions",
+      DESCRIPTION: `
+      For more specific needs that require extra control or very specific logic we are able to also offer bespoke solutions. These tend to be more involved workflows and may require some deeper dive into the flow and the data. But if there is a way to automate some of your pain we will endevour to find a way.
+      `,
+    },
+  ],
 };
 
 const HowWeWork = () => {
@@ -54,6 +68,26 @@ const HowWeWork = () => {
           {HOW_WE_WORK_CONTENT.SERVICE_DESCRIPTION}
         </Typography>
       </Box>
+      {HOW_WE_WORK_CONTENT.SERVICES.map((x, index) => (
+        <Box sx={{ marginTop: "1rem" }} key={x.TITLE}>
+          <Typography
+            color={index % 2 === 0 ? "primary" : "secondary"}
+            variant="h6"
+            sx={{
+              fontFamily: "Space Grotesk",
+            }}
+          >
+            {x.TITLE}
+          </Typography>
+          <Typography
+            color="textSecondary"
+            variant="body2"
+            sx={{ whiteSpace: "pre-line" }}
+          >
+            {x.DESCRIPTION}
+          </Typography>
+        </Box>
+      ))}
     </Box>
   );
 };

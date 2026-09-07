@@ -35,6 +35,7 @@ const Homepage = () => {
           <Button
             variant="outlined"
             color="secondary"
+            href="/how-we-work"
             sx={{ transform: "rotate(1.4deg)" }}
           >
             See how it works

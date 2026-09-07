@@ -6,12 +6,11 @@ import {
   Stack,
   Step,
   StepContent,
-  StepContext,
   StepLabel,
   Stepper,
   Typography,
 } from "@mui/material";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const steps = [
   {
@@ -37,7 +36,6 @@ type HowWeWorkProps = {};
 const HowWeWork: React.FC<HowWeWorkProps> = ({}) => {
   const [activeStep, setActiveStep] = useState(0);
 
-  const previousActiveStepRef = useRef(activeStep);
   const continueButtonRef = useRef<HTMLButtonElement>(null);
   const backButtonRef = useRef<HTMLButtonElement>(null);
 
