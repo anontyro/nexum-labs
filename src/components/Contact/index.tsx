@@ -19,8 +19,9 @@ import { z } from "zod";
 
 const POST_CONTACT_FORM = "/api/contact";
 const SUCCESS_MESSAGE =
-  "Thanks for getting in contact we will get back to you soon";
-const ERROR_MESSAGE = "Error submitting the form check the errors below";
+  "Thanks for getting in touch — we'll get back to you soon";
+const ERROR_MESSAGE =
+  "There was a problem submitting the form — please check the errors below";
 
 const contactErrorSchema = z.object({
   errors: z.object({
@@ -38,7 +39,7 @@ const parseErrors = (response: Response): string[] => {
 
   if (!parsed.success) {
     return [
-      "Unable to send the form, try sending an email instead to hello@nexumlabs.co.uk",
+      "We couldn't send the form — try emailing us instead at hello@nexumlabs.co.uk",
     ];
   }
 
@@ -167,7 +168,7 @@ const ContactForm = () => {
                   variant="outlined"
                 />
                 <Button type="submit" variant="contained">
-                  Send It
+                  Send Message
                 </Button>
               </Stack>
             </form>

@@ -6,15 +6,13 @@ import InlineHeading from "../Layout/Headings/InlineHeading";
 const PROJECT_CONTENT = {
   TITLE: "How we spend our time",
   DESCRIPTION: `
-  A sample of ways we have improved workflows across different SMEs and clients to solve real world problems.
+  A sample of ways we've improved workflows for SMEs and clients to solve real-world problems.
   `,
   PROJECTS: [
     {
-      TITLE: "Lead capture and follow up",
+      TITLE: "Lead Capture and Follow-Up",
       DESCRIPTION: `
-      A common area we often see people struggling with is automating the process of lead capture and all the follow up that is required here. It can be hard to keep everything up-to-date and organised when there are many other things requiring attention.
-      
-      
+      A common area we see people struggle with is automating lead capture and the follow-up work that comes with it. It's easy for this to slip when there are so many other things demanding your attention.
       `,
       TAGS: "",
     },

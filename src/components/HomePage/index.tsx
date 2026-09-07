@@ -7,7 +7,7 @@ import InlineHeading from "../Layout/Headings/InlineHeading";
 const PAGE_CONTENT = {
   TITLE: "Integrations & automation, done properly.",
   SUB_TITLE:
-    "We build the n8n workflows that keep your business moving without extra headcount.",
+    "We build the automation workflows that keep your business moving without extra headcount.",
 };
 
 const Homepage = () => {
@@ -104,7 +104,7 @@ const Homepage = () => {
                     fontFamily: "Space Grotesk",
                   }}
                 >
-                  n8n Automations
+                  Automations
                 </Typography>
                 <Typography variant="body2" color="textSecondary" sx={{}}>
                   workflows that run themselves

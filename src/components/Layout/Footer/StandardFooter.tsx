@@ -48,7 +48,7 @@ const StandardFooter = () => {
           </Stack>
           <Stack direction="column">
             <Typography variant="body2" color="textSecondary">
-              All rights reserved 2026 ©
+              © 2026 NexumLabs
             </Typography>
             <Link href="mailto:hello@nexumlabs.co.uk" color="secondary">
               hello@nexumlabs.co.uk

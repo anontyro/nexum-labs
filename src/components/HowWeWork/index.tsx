@@ -4,31 +4,31 @@ import { Box, Divider, Typography } from "@mui/material";
 import InlineHeading from "../Layout/Headings/InlineHeading";
 
 const HOW_WE_WORK_CONTENT = {
-  TITLE: "A Fast efficient process that gets results",
+  TITLE: "A fast, efficient process that gets results",
   DESCRIPTION: `
-  We understand that time is valuable and so is getting the process right. With these two things in mind we built the process around these core ideas. The inital audit provides context and surfaces issues, we then discuss the audit outcomes and settle on a statement of work together.
+  We understand that time is valuable, and so is getting the process right. With those two things in mind, we built our process around a few core ideas. The initial audit gives us context and surfaces any issues; we then discuss the findings together and agree on a statement of work.
 
-  Then we will go and build out the processes whilst providing weekly updates on the progress before a demo of the process. This is done when things are mostly in place but still allows for course correction as required. Then deployment and handover with the documentation required.
+  From there, we build out the solution, sharing weekly updates on progress and running a demo once things are mostly in place, while there's still room for course correction. Then comes deployment and handover, along with the documentation you need.
 
-  We will also check back in a few more times to ease the transition over and ensure the process is settled in and working as expected.
+  We'll also check back in a few times afterwards to help smooth the transition and make sure everything settles in and works as expected.
   `,
   SERVICE_TITLE: "What we do",
   SERVICE_DESCRIPTION: `
-  At our core we offer services built to client needs to enhance productivity and efficiency of existing processes. This results in automation of tasks which can be done via n8n providing a robust automation process to relie on. We do also develop other scripts and processes as required.
+  At our core, we build services around your needs to improve the productivity and efficiency of your existing processes. Most often this means automating tasks into a reliable, repeatable workflow you can depend on. We also develop other scripts and processes as required.
 
-  In somecases we may even need to build more bespoke processes to capture or transform data, these tend to be bigger scoped and more involved but can be shaped exactly to the business needs. Although these are less common cases and find usually other processes solve the problems.
+  In some cases we build more bespoke processes to capture or transform data. These tend to be bigger in scope and more involved, but can be shaped exactly around your business needs, though they're less common, as most problems can be solved with a simpler approach.
   `,
   SERVICES: [
     {
-      TITLE: "n8n Automation Flow",
+      TITLE: "Automation Workflows",
       DESCRIPTION: `
-      Getting tired of chasing up clients for invoice payments? Finding it hard to keep leads organised? Having to manually update data in two or more places? These are they types of workflows that we use n8n to help automate. Once they are setup and running they can provide a noticable impact in the day to day work.
+      Getting tired of chasing clients for invoice payments? Finding it hard to keep leads organised? Having to manually update the same data in two or more places? These are the kinds of workflows we help automate. Once set up and running, they can make a noticeable difference to your day-to-day work.
       `,
     },
     {
       TITLE: "Custom Solutions",
       DESCRIPTION: `
-      For more specific needs that require extra control or very specific logic we are able to also offer bespoke solutions. These tend to be more involved workflows and may require some deeper dive into the flow and the data. But if there is a way to automate some of your pain we will endevour to find a way.
+      For more specific needs that require extra control or particular logic, we also offer bespoke solutions. These tend to be more involved and may need a closer look at how your data and processes flow. But if there's a way to automate away some of your pain points, we'll find it.
       `,
     },
   ],

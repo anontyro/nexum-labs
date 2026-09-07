@@ -20,9 +20,9 @@ const PAGE_CONTENT = {
   Based out of Aberdeen, UK we aim to help SMEs up and down the country to provide better value with the tools they are already using. It is our goal to work with you to better integrate the workflows to save time and money.
   `,
   BACKGROUND: `
-  Hi, I'm Alex and I've worked in tech for over 10 years covering a range of different businesses. I come from a technical background working as a software engineer and always enjoy problem solving. Working in several industries and in B2B capacities I understand what is important to businesses both small and large.
+  Hi, I'm Alex, the person behind Nexum Labs. I've worked in tech for over 10 years across a range of different businesses. I come from a technical background as a software engineer and always enjoy solving problems. Having worked across several industries and in B2B roles, I understand what matters to businesses both small and large.
 
-  I decide to found Nexum Labs after seeing countless clients falling into the same patterns with manual work even in the internet age! Repeated data entry and duplication, over use of common tools to do tasks they are not designed for. All of this leads to inefficiencies and potential data problems.
+  I decided to found Nexum Labs after seeing countless clients fall into the same patterns of manual work, even in this day and age. Repeated data entry and duplication, and tools stretched to do jobs they were never designed for. All of this leads to inefficiencies and potential data problems.
   `,
 };
 
@@ -30,37 +30,37 @@ const FAQ_CONTENT: { TITLE: string; DESCRIPTION: string }[] = [
   {
     TITLE: "Can't I just use AI?",
     DESCRIPTION: `
-    Sure you can and there is nothing wrong with that. However you would need to prompt it each time, feed it the data manually, or connect it to your data source and then spend time to build a process that works. This can also change as models are updated and it does mean re-prompting each time which will keep incurring a cost.
+    Sure you can, and there's nothing wrong with that. However, you would need to prompt it each time, feed it the data manually, or connect it to your data source and spend time building a process that works. This can also change as the underlying models are updated, meaning you'd need to keep re-prompting, which adds an ongoing cost.
 
-    For more long term solutions have some script or automate process will prove beneficial. You could also have the AI help devise the script or process yourself as well and that could prove pretty good. This is also something we can help you with, or of course we are happy to help with this as well.
+    For a longer-term solution, having a script or automated process in place will prove far more beneficial. You could even have the AI help you design that script or process yourself. Or, if you'd rather we took care of it, we're always happy to help.
     `,
   },
   {
     TITLE:
-      "What is your policy on AI? And how will AI be used in the engagement?",
+      "What's your policy on AI, and how will it be used in our engagement?",
     DESCRIPTION: `
-    We follow strictly ethical use of AI in all the projects we work on and will always be upfront and open with you about where we may use AI to assist in the process. Like any tool AI proves to be valuable and can help speed up processes and with a small team help leverage talent even more. As a result we will use AI tools along side our own skills to enhance the outcome.
+    We follow a strictly ethical approach to using AI in every project we work on, and we'll always be upfront with you about where we use it to assist the process. Like any tool, AI is valuable — it helps speed up our processes and lets a small team like ours make the most of our talent. As a result, we use AI tools alongside our own skills to enhance the outcome.
 
-    As we are from a technical background we prefer AI assisted processes and do not relie on AI to provide full solutions. From experience this proves to be problamatic and can be avoided with some oversight.
+    Coming from a technical background, we prefer AI-assisted processes rather than relying on AI to deliver full solutions on its own. In our experience, that approach tends to cause problems, ones that are easily avoided with the right oversight.
     `,
   },
   {
     TITLE: "What is involved in the audit?",
     DESCRIPTION: `
-    Our audit process is designed for use to get to know you, your business and the core workflows. We will spend time with you, either remotely via a video call or in person and discuss the key workflows. This allows us to understand the business flows and the needs helping us better talior our proposal for your needs.
+    Our audit process is designed to get to know you, your business, and your core workflows. We'll spend time with you, either remotely via video call or in person, to discuss how you work. This helps us understand your business and tailor our proposal to your needs.
 
-    After the audit we will give you a timeframe for when we will provide you a detailed audit document that outlines the core areas flagged to improve and suggestions around what could be done to enhance them. This document will usually contain immediate areas to focus on and some bigger follow ups.
+    After the audit, we'll give you a timeframe for when you'll receive a detailed audit document outlining the areas we've flagged for improvement, along with suggestions on what could be done to address them. This document usually covers immediate priorities as well as some bigger follow-up opportunities.
 
-    After getting the audit document from us it is also perfectly fine to end our engagement here if you so desire, but we hope the document provides some continued collaboration. And if you so wish we can discuss that at this time.
+    It's also perfectly fine to end our engagement once you have the audit document, if that's what you'd prefer — though we hope it provides the basis for continued collaboration. If you'd like to carry on working together, we can discuss that at this point.
     `,
   },
   {
     TITLE:
-      "What happens after you have added an automation process do I need technical knowledge?",
+      "Once an automation process is in place, do I need technical knowledge to use it?",
     DESCRIPTION: `
-    As part of our engagement we will also look to understand the businesses technical capabilities and will suggest different solutions depending on what we assess and agree on. We try to tailor the solution for the clients need as we understand different clients do have different needs.
+    As part of our engagement, we'll also get a sense of your team's technical comfort level and suggest solutions that fit, since every client's needs are different.
 
-    As a result we will always provide a comprehensive handover documentation and walk you through it on the handover. But we do also provide semi and fully hosted solutions as required and will suggest different options prior to any engagement.
+    We always provide comprehensive documentation and walk you through everything during handover. We also offer partially and fully hosted solutions where needed, and we'll talk through the right option with you before any engagement begins.
   `,
   },
   {
